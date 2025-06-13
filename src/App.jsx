@@ -32,7 +32,7 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Home onLogout={handleLogout} user={user} />}
+          element={user ? <Home onLogout={handleLogout} user={user} /> : <Navigate to="/login" />}
         />
         <Route
           path="/login"
