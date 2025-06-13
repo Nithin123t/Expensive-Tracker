@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Profile = ({ user, onUpdateProfile }) => {
+const Profile = ({ user, setUser }) => {
   const [name, setName] = useState(user.name || "");
   const [profilePic, setProfilePic] = useState(user.profilePic || "");
   const [preview, setPreview] = useState(profilePic);
@@ -39,7 +39,7 @@ const Profile = ({ user, onUpdateProfile }) => {
 
     // Create updated user object
     const updatedUser = { ...user, name: name.trim(), profilePic };
-    onUpdateProfile(updatedUser);
+    setUser(updatedUser);
     alert("Profile updated successfully!");
   };
 
