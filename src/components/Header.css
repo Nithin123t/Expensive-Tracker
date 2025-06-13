@@ -1,0 +1,18 @@
+.nav {
+  background-color: #1e88e5;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}

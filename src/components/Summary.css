@@ -1,0 +1,19 @@
+/* src/components/Summary.css */
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+.card {
+  flex: 1 1 30%;
+  min-width: 150px;
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.income { border-left: 5px solid green; }
+.expense { border-left: 5px solid red; }
+.balance { border-left: 5px solid blue; }
